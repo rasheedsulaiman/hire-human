@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employers - HireHuman</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Google Sans Flex"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#F5F3F1',
+                            dark: '#000000',
+                            orange: '#F47753',
+                            purple: '#4338ca',
+                            green: '#064E3B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-brand-bg/95 backdrop-blur-sm transition-all duration-300">
+        <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="./index.html" class="flex items-center cursor-pointer">
+                <img src="./assets/HH-logo.png" alt="Hire Human" class="h-8">
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="./learners.html" class="hover:text-brand-orange transition-colors">Learners</a>
+                <a href="./employers.html" class="hover:text-brand-orange transition-colors">Employers</a>
+                <a href="./training-partners.html" class="hover:text-brand-orange transition-colors">Training Partners</a>
+            </div>
+
+            <div class="text-xs text-gray-500 hidden md:flex items-center gap-1">
+                Powered by <a href="https://www.launchcode.org" target="_blank" rel="noopener noreferrer"><img src="./assets/LaunchCode_darkblue.png" alt="LaunchCode" class="h-5 -mt-1.5"></a>
+            </div>
+
+            <button class="md:hidden p-2 text-gray-600 hover:text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <!-- Title and CTA Row -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+                <h1 class="text-4xl md:text-5xl lg:text-5xl leading-[1.1] max-w-3xl">
+                    Deploy an <span class="text-brand-orange">AI Task Force</span>, reduce human workload in 1 week
+                </h1>
+                <div class="flex flex-col items-start md:items-end gap-2">
+                    <button class="bg-brand-dark text-white px-10 py-4 rounded-full font-medium hover:bg-black transition-colors">
+                        Get Started
+                    </button>
+                    <p class="text-sm text-gray-600 self-center">June 1 start date</p>
+                </div>
+            </div>
+
+            <!-- Image Shapes Row -->
+            <div class="relative h-[400px] md:h-[500px] overflow-visible">
+                <!-- Left rounded rectangle with person image -->
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[80%] md:w-[80%] h-[100%] rounded-[20rem] md:rounded-[20rem] overflow-hidden z-10">
+                    <img src="https://placehold.co/800x600/png?text=AI+Task+Force" alt="AI Task Force" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Right circle with green grid pattern -->
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full overflow-hidden">
+                  <img src="https://placehold.co/600x600/FF6347/000000/png?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Proven Talent -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Proven Talent Delivery Experts Building Your AI-Ready Workforce</h2>
+                    <p class="text-gray-600 text-lg">We cut our teeth by placing thousands of candidates in technical roles at top organizations. We know how to deliver talent that performs.</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="w-full lg:flex-1 relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[200px] overflow-hidden">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[5%] sm:left-[8%] lg:left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-full sm:w-[80%] md:w-[75%] lg:w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Talent+Delivery" alt="Talent Delivery" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Spectrum</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Mastercard</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Centene</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Boeing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Reducing Human Workload -->
+    <section class="py-16 md:py-24">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Reducing human workload—fast.</h2>
+                    <p class="text-gray-600 text-lg">Now we're deploying AI task forces to reduce human workload at companies like yours, starting at $25/hour</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="flex-1 relative h-[200px] w-full">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Workload+Reduction" alt="Workload Reduction" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec-content-workforce-ready" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-[2rem] overflow-hidden flex flex-col h-full">
+                    <div class="h-48 bg-[#1a103c] relative p-6 overflow-hidden">
+                        <div class="absolute inset-0 opacity-30"
+                             style="background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ffffff 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #ffffff 20px);">
+                        </div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                             <div class="w-32 h-32 border border-purple-400 rounded-full opacity-50"></div>
+                        </div>
+
+                        <div class="relative z-10 bg-[#7c3aed] w-12 h-12 rounded-lg flex items-center justify-center text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-12 flex-1 flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="text-3xl">AI-Enabled Execution</h3>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-md text-xs font-semibold uppercase tracking-wide border border-gray-200">Week 1</span>
+                        </div>
+                        <p class="text-gray-600 mb-8 flex-1 leading-relaxed">Deploy talent that delivers measurable cost savings from day one through AI-powered automation and process optimization.</p>
+                        <button class="bg-brand-dark text-white px-8 py-4 rounded-full w-full md:w-auto font-medium hover:bg-black transition-colors">Learn more →</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#F0ECE8] rounded-[2rem] p-12 flex flex-col justify-center h-full relative">
+                    <h3 class="text-2xl mb-6">What you'll get</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                             <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Reduce repetitive human workload with AI-enabled execution</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Ship a week 1 cost-savings project</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Build a repeatable pipeline of adoption initiatives (process + integrations)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 3: Two Specialized AI Tracks -->
+    <section class="py-16 md:py-24">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Two Specialized AI Tracks to Meet Your Needs</h2>
+                    <p class="text-gray-600 text-lg">Most organizations need AI expertise at both the business and technical layers. Our specialized tracks ensure you have the right talent driving adoption where it matters most.</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="flex-1 relative h-[200px] w-full">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=AI+Tracks" alt="AI Tracks" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="sec-content-talent-delivered" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-[1.5rem] p-6 ">
+                    <div class="rounded-xl overflow-hidden h-65 mb-6">
+                        <img src="./assets/hh-Agentic-AI-Specialists.jpg" alt="Agentic AI Specialists" class="w-full h-full object-cover">
+                    </div>
+                    <span class="bg-[#FF8A65] text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Business</span>
+                    <h3 class="text-3xl mt-4 mb-2">Agentic AI Specialists</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Cross-functional specialists who translate AI capabilities into cost savings by reducing human workload. They identify automation opportunities and deliver measurable results.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Workflow analysis and optimization</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI agent deployment and testing</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Cost savings measurement and reporting</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Stakeholder communication and training</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Process improvement initiatives</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-[1.5rem] p-6 ">
+                    <div class="rounded-xl overflow-hidden h-65 mb-6">
+                        <img src="./assets/hh-AI-Readiness-Engineers.jpg" alt="AI Readiness Engineers" class="w-full h-full object-cover">
+                    </div>
+                    <span class="bg-[#FF8A65] text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Technical</span>
+                    <h3 class="text-3xl mt-4 mb-2">AI Readiness Engineers</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Technical experts who deeply embed AI into your systems and workflows. They build the infrastructure and integrations that make AI adoption scalable across your organization.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI system integration and architecture</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">API development and automation pipelines</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Infrastructure setup and maintenance</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Security and compliance implementation</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Technical documentation and knowledge transfer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Tangible Results -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Tangible results delivered on week 1</h2>
+                    <p class="text-gray-600 text-lg">We scope talent to tangible projects that deliver results from week one</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="w-full lg:flex-1 relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[200px] overflow-hidden">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[5%] sm:left-[8%] lg:left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-full sm:w-[80%] md:w-[75%] lg:w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Results" alt="Results" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: Match -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">1</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Match</h3>
+                    <p class="text-gray-600 mb-4">We help you select LC-badged talent matched to your specific needs</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Technical aptitude screening</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Soft skills assessment</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Hunger and drive evaluation</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Deploy -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">2</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Deploy</h3>
+                    <p class="text-gray-600 mb-4">Deploy talent on strategic initiatives that reduce human workload immediately</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Strategic initiative deployment</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Process improvement projects</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Technical integrations</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Decide -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">3</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Decide</h3>
+                    <p class="text-gray-600 mb-4">Complete flexibility with zero obligation to convert</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Continue on contract</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Convert to full-time for free</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Cancel anytime, no questions asked</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Early Adopter Access -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="bg-gradient-to-br from-purple-900 to-purple-700 rounded-3xl p-10 md:p-16 text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ffffff 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #ffffff 20px);"></div>
+                <div class="relative z-10">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl mb-4">Early Adopter Access - First 100 Seats Only</h2>
+                        <p class="text-lg text-purple-100 max-w-3xl mx-auto">Secure your talent now for a targeted June 1 start date</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Item 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">$25/hr</div>
+                            <div class="text-purple-200 font-medium mb-4">50% Discount</div>
+                            <p class="text-sm text-purple-200">Up to 6 months</p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">$1K</div>
+                            <div class="text-purple-200 font-medium mb-4">Minimum Commitment</div>
+                            <p class="text-sm text-purple-200">40 billable hours per contractor</p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">$0</div>
+                            <div class="text-purple-200 font-medium mb-4">Finder's Fee</div>
+                            <p class="text-sm text-purple-200">Convert for free, a $10K savings</p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">2</div>
+                            <div class="text-purple-200 font-medium mb-4">Max Contractors</div>
+                            <p class="text-sm text-purple-200">Reserve your talent now</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <button class="bg-white text-purple-900 px-12 py-4 rounded-full font-bold text-lg hover:bg-purple-50 transition-colors">Reserve Your Spot →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-gray-200">
+        <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <a href="./learners.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Learners</a>
+                <a href="./employers.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Employers</a>
+                <a href="./training-partners.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Training Partners</a>
+            </div>
+            <div class="space-y-4">
+                <a href="#" class="block text-sm font-medium hover:text-brand-orange transition-colors">Privacy</a>
+                <a href="#" class="block text-sm font-medium hover:text-brand-orange transition-colors">Terms</a>
+            </div>
+
+            <div class="md:col-span-2 flex flex-col lg:items-end justify-between h-full pt-8 lg:pt-0">
+                <div class="text-xs text-gray-400 mb-2 flex items-center gap-1">Powered by <a href="https://www.launchcode.org" target="_blank" rel="noopener noreferrer"><img src="./assets/LaunchCode_darkblue.png" alt="LaunchCode" class="h-5 -mt-1.5 opacity-60 hover:opacity-100 transition-opacity"></a></div>
+                <div class="w-full max-w-md lg:text-right flex lg:justify-end">
+                    <img src="./assets/HH-logo.png" alt="Hire Human" class="h-16 md:h-20 lg:h-24 object-contain">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
