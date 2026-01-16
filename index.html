@@ -53,52 +53,65 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
+            min-width: 100%;
+            max-width: none;
         }
 
-        /* Default flex for all cards */
-        .hero-row .hero-card {
-            flex: 1;
+        .hero-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Expanded state for cycling animation */
         .hero-card.expanded {
-            flex: 3 !important;
+            flex: 5 5 0 !important;
         }
 
-        /* Shape-specific border radii and initial sizes */
+        /* Shape-specific border radii and proportional flex sizes */
         .circle-sm {
             border-radius: 9999px;
-            flex: 0 0 150px;
+            flex: 1.25 1 0;
         }
 
         .circle-md {
             border-radius: 9999px;
-            flex: 0 0 180px;
+            flex: 1.5 1 0;
         }
 
         .rounded-rect-portrait {
             border-radius: 2rem;
-            flex: 0 0 180px;
+            flex: 1.5 1 0;
         }
 
         .rounded-rect-lg-landscape {
             border-radius: 2.5rem;
-            flex: 0 0 350px;
+            flex: 2.9 1 0;
         }
 
         .oval-lg-landscape {
             border-radius: 9999px;
-            flex: 0 0 400px;
+            flex: 3.3 1 0;
         }
 
         .oval-landscape {
             border-radius: 9999px;
-            flex: 0 0 300px;
+            flex: 2.5 1 0;
         }
 
         .pill-portrait {
             border-radius: 9999px;
-            flex: 0 0 120px;
+            flex: 1 1 0;
         }
 
         /* Responsive adjustments */
@@ -146,16 +159,12 @@
         <div class="max-w-[1200px] mx-auto px-6">
           <!-- Title and Image Row -->
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 relative">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl leading-[1.1] max-w-4xl">
+                <h1 class="text-4xl md:text-5xl lg:text-5xl leading-[1.1] max-w-3xl">
                     Building an <span class="text-brand-orange">AI-ready workforce</span>, creating 1 million jobs by 2035
                 </h1>
                 
-                <div class="hidden md:flex bg-[#FF8A65] w-48 h-20 rounded-full items-center justify-center relative overflow-hidden mt-4 md:mt-0">
-                    <div class="absolute inset-0 border border-white/30 rounded-full m-1"></div>
+                <div class="hidden md:flex bg-[#FF8A65] w-64 h-28 rounded-full items-center justify-center relative overflow-hidden mt-4 md:mt-0">
                     <span class="text-white text-4xl">✧</span>
-                    <div class="absolute left-0 w-full h-[1px] bg-white/40 top-1/2 -translate-y-1/2"></div>
-                    <div class="absolute top-0 h-full w-[1px] bg-white/40 left-1/3"></div>
-                    <div class="absolute top-0 h-full w-[1px] bg-white/40 right-1/3"></div>
                 </div>
             </div>
             <!-- Hero Cards -->
@@ -163,16 +172,16 @@
                 <!-- Row 1 -->
                 <div class="hero-row">
                     <div class="hero-card circle-sm">
-                        <img src="https://placehold.co/200x200/D4B5A0/ffffff?text=1" alt="Card 1">
+                        <img src="https://placehold.co/500x200/D4B5A0/ffffff?text=1" alt="Card 1">
                     </div>
                     <div class="hero-card rounded-rect-portrait">
-                        <img src="https://placehold.co/200x300/C19A7D/ffffff?text=2" alt="Card 2">
+                        <img src="https://placehold.co/500x300/C19A7D/ffffff?text=2" alt="Card 2">
                     </div>
                     <div class="hero-card oval-lg-landscape">
                         <img src="https://placehold.co/500x200/8B6F47/ffffff?text=3" alt="Card 3">
                     </div>
                     <div class="hero-card pill-portrait">
-                        <img src="https://placehold.co/150x300/E5C9A8/ffffff?text=4" alt="Card 4">
+                        <img src="https://placehold.co/500x300/E5C9A8/ffffff?text=4" alt="Card 4">
                     </div>
                     <div class="hero-card rounded-rect-lg-landscape">
                         <img src="https://placehold.co/500x200/D9C4A9/ffffff?text=5" alt="Card 5">
@@ -185,16 +194,16 @@
                         <img src="https://placehold.co/500x200/C19A7D/ffffff?text=6" alt="Card 6">
                     </div>
                     <div class="hero-card circle-md">
-                        <img src="https://placehold.co/200x200/E5C9A8/ffffff?text=7" alt="Card 7">
+                        <img src="https://placehold.co/500x200/E5C9A8/ffffff?text=7" alt="Card 7">
                     </div>
                     <div class="hero-card rounded-rect-portrait">
-                        <img src="https://placehold.co/200x300/D4B5A0/ffffff?text=8" alt="Card 8">
+                        <img src="https://placehold.co/500x300/D4B5A0/ffffff?text=8" alt="Card 8">
                     </div>
                     <div class="hero-card oval-landscape">
-                        <img src="https://placehold.co/400x200/8B6F47/ffffff?text=9" alt="Card 9">
+                        <img src="https://placehold.co/500x200/8B6F47/ffffff?text=9" alt="Card 9">
                     </div>
                     <div class="hero-card pill-portrait">
-                        <img src="https://placehold.co/150x300/E5C9A8/ffffff?text=10" alt="Card 10">
+                        <img src="https://placehold.co/500x300/E5C9A8/ffffff?text=10" alt="Card 10">
                     </div>
                 </div>
             </div>
@@ -353,7 +362,7 @@
                                 <path d="M0,50 Q25,10 50,40 T100,50" fill="none" stroke="currentColor" stroke-width="0.5"/>
                             </svg>
                         </div>
-                        <div class="absolute bottom-6 left-8 bg-white text-black w-10 h-10 flex items-center justify-center rounded-lg z-10">
+                        <div class="absolute bottom-6 left-12 bg-white text-black w-10 h-10 flex items-center justify-center rounded-lg z-10">
                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         </div>
                     </div>
@@ -371,7 +380,7 @@
                         <div class="absolute inset-0 grid grid-cols-6 grid-rows-2">
                              <div class="border-r border-[#065F46]"></div><div class="border-r border-[#065F46] border-b transform rotate-45"></div><div class="border-r border-[#065F46]"></div><div class="border-r border-[#065F46] border-b"></div><div class="border-r border-[#065F46]"></div><div class="border-r border-[#065F46]"></div>
                         </div>
-                        <div class="absolute bottom-6 left-8 bg-white text-black w-10 h-10 flex items-center justify-center rounded-lg z-10">
+                        <div class="absolute bottom-6 left-12 bg-white text-black w-10 h-10 flex items-center justify-center rounded-lg z-10">
                              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                         </div>
                     </div>
@@ -438,36 +447,24 @@
             const row1Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(1) .hero-card');
             const row2Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(2) .hero-card');
 
-            let lastRowIndex = -1;
-            let lastCardIndex = -1;
-
-            function getRandomCard() {
-                let rowIndex, cardIndex, cards;
-
-                // Keep picking random cards until we get one that's different from the last one
-                do {
-                    // Randomly pick row 1 or row 2
-                    rowIndex = Math.floor(Math.random() * 2);
-                    cards = rowIndex === 0 ? row1Cards : row2Cards;
-
-                    // Randomly pick a card from that row
-                    cardIndex = Math.floor(Math.random() * cards.length);
-                } while (rowIndex === lastRowIndex && cardIndex === lastCardIndex);
-
-                lastRowIndex = rowIndex;
-                lastCardIndex = cardIndex;
-
-                return { cards, cardIndex };
-            }
+            let isRow1 = true; // Start with row 1
 
             function cycleCards() {
                 // Remove expanded class from all cards
                 row1Cards.forEach(card => card.classList.remove('expanded'));
                 row2Cards.forEach(card => card.classList.remove('expanded'));
 
-                // Get a random card and expand it
-                const { cards, cardIndex } = getRandomCard();
-                cards[cardIndex].classList.add('expanded');
+                // Pick a random card from the current row
+                if (isRow1) {
+                    const randomIndex = Math.floor(Math.random() * row1Cards.length);
+                    row1Cards[randomIndex].classList.add('expanded');
+                } else {
+                    const randomIndex = Math.floor(Math.random() * row2Cards.length);
+                    row2Cards[randomIndex].classList.add('expanded');
+                }
+
+                // Toggle to the other row for next cycle
+                isRow1 = !isRow1;
             }
 
             // Initial expansion
