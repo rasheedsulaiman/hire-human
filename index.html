@@ -26,6 +26,95 @@
             }
         }
     </script>
+    <style>
+        /* Hero Cards Custom Styles */
+        .hero-cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .hero-row {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .hero-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .hero-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Default flex for all cards */
+        .hero-row .hero-card {
+            flex: 1;
+        }
+
+        /* Expanded state for cycling animation */
+        .hero-card.expanded {
+            flex: 3 !important;
+        }
+
+        /* Shape-specific border radii and initial sizes */
+        .circle-sm {
+            border-radius: 9999px;
+            flex: 0 0 150px;
+        }
+
+        .circle-md {
+            border-radius: 9999px;
+            flex: 0 0 180px;
+        }
+
+        .rounded-rect-portrait {
+            border-radius: 2rem;
+            flex: 0 0 180px;
+        }
+
+        .rounded-rect-lg-landscape {
+            border-radius: 2.5rem;
+            flex: 0 0 350px;
+        }
+
+        .oval-lg-landscape {
+            border-radius: 9999px;
+            flex: 0 0 400px;
+        }
+
+        .oval-landscape {
+            border-radius: 9999px;
+            flex: 0 0 300px;
+        }
+
+        .pill-portrait {
+            border-radius: 9999px;
+            flex: 0 0 120px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-row {
+                overflow-x: auto;
+                gap: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .hero-card {
+                height: 150px;
+                flex-shrink: 0;
+            }
+        }
+    </style>
 </head>
 <body class="bg-brand-bg text-brand-dark font-sans antialiased">
 
@@ -69,34 +158,44 @@
                     <div class="absolute top-0 h-full w-[1px] bg-white/40 right-1/3"></div>
                 </div>
             </div>
-            <!-- Hero Card -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 auto-rows-[minmax(100px,auto)]">
-                <div class="aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform">
-                    <img src="https://placehold.co/200x200/png?text=Face1" alt="Person" class="w-full h-full object-cover">
+            <!-- Hero Cards -->
+            <div class="hero-cards-container">
+                <!-- Row 1 -->
+                <div class="hero-row">
+                    <div class="hero-card circle-sm">
+                        <img src="https://placehold.co/200x200/D4B5A0/ffffff?text=1" alt="Card 1">
+                    </div>
+                    <div class="hero-card rounded-rect-portrait">
+                        <img src="https://placehold.co/200x300/C19A7D/ffffff?text=2" alt="Card 2">
+                    </div>
+                    <div class="hero-card oval-lg-landscape">
+                        <img src="https://placehold.co/500x200/8B6F47/ffffff?text=3" alt="Card 3">
+                    </div>
+                    <div class="hero-card pill-portrait">
+                        <img src="https://placehold.co/150x300/E5C9A8/ffffff?text=4" alt="Card 4">
+                    </div>
+                    <div class="hero-card rounded-rect-lg-landscape">
+                        <img src="https://placehold.co/500x200/D9C4A9/ffffff?text=5" alt="Card 5">
+                    </div>
                 </div>
-                <div class="aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform translate-y-8">
-                    <img src="https://placehold.co/200x200/png?text=Face2" alt="Person" class="w-full h-full object-cover">
-                </div>
-                <div class="aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform">
-                    <img src="https://placehold.co/200x200/png?text=Face3" alt="Person" class="w-full h-full object-cover">
-                </div>
-                
-                <div class="col-span-2 aspect-[2.2/1] rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform flex">
-                    <img src="https://placehold.co/400x200/png?text=Group+Photo" alt="Group" class="w-full h-full object-cover">
-                </div>
-                
-                <div class="aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform translate-y-4">
-                    <img src="https://placehold.co/200x200/png?text=Face4" alt="Person" class="w-full h-full object-cover">
-                </div>
-                
-                <div class="hidden md:block aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform">
-                    <img src="https://placehold.co/200x200/png?text=Face5" alt="Person" class="w-full h-full object-cover">
-                </div>
-                <div class="hidden md:block col-span-2 aspect-[2.2/1] rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform">
-                    <img src="https://placehold.co/400x200/png?text=Working+Session" alt="Working" class="w-full h-full object-cover">
-                </div>
-                 <div class="hidden md:block aspect-square rounded-full overflow-hidden border-2 border-white hover:scale-105 transition transform">
-                    <img src="https://placehold.co/200x200/png?text=Face6" alt="Person" class="w-full h-full object-cover">
+
+                <!-- Row 2 -->
+                <div class="hero-row">
+                    <div class="hero-card oval-lg-landscape">
+                        <img src="https://placehold.co/500x200/C19A7D/ffffff?text=6" alt="Card 6">
+                    </div>
+                    <div class="hero-card circle-md">
+                        <img src="https://placehold.co/200x200/E5C9A8/ffffff?text=7" alt="Card 7">
+                    </div>
+                    <div class="hero-card rounded-rect-portrait">
+                        <img src="https://placehold.co/200x300/D4B5A0/ffffff?text=8" alt="Card 8">
+                    </div>
+                    <div class="hero-card oval-landscape">
+                        <img src="https://placehold.co/400x200/8B6F47/ffffff?text=9" alt="Card 9">
+                    </div>
+                    <div class="hero-card pill-portrait">
+                        <img src="https://placehold.co/150x300/E5C9A8/ffffff?text=10" alt="Card 10">
+                    </div>
                 </div>
             </div>
         </div>
@@ -333,6 +432,48 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const row1Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(1) .hero-card');
+            const row2Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(2) .hero-card');
+
+            const maxCards = Math.max(row1Cards.length, row2Cards.length);
+            let currentCardIndex = 0;
+            let isRow1 = true; // Start with row 1
+
+            function cycleCards() {
+                // Remove expanded class from all cards
+                row1Cards.forEach(card => card.classList.remove('expanded'));
+                row2Cards.forEach(card => card.classList.remove('expanded'));
+
+                // Expand the current card
+                if (isRow1) {
+                    if (currentCardIndex < row1Cards.length) {
+                        row1Cards[currentCardIndex].classList.add('expanded');
+                    }
+                } else {
+                    if (currentCardIndex < row2Cards.length) {
+                        row2Cards[currentCardIndex].classList.add('expanded');
+                    }
+                    // Move to next card index only after bottom row
+                    currentCardIndex++;
+                    if (currentCardIndex >= maxCards) {
+                        currentCardIndex = 0; // Loop back to start
+                    }
+                }
+
+                // Toggle between rows
+                isRow1 = !isRow1;
+            }
+
+            // Initial expansion
+            cycleCards();
+
+            // Set interval to cycle every 2.5 seconds
+            setInterval(cycleCards, 2500);
+        });
+    </script>
 
 </body>
 </html>
