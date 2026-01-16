@@ -45,7 +45,7 @@
             position: relative;
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            height: 200px;
+            height: 260px;
             cursor: pointer;
         }
 
@@ -110,7 +110,7 @@
             }
 
             .hero-card {
-                height: 150px;
+                height: 195px;
                 flex-shrink: 0;
             }
         }
@@ -438,33 +438,36 @@
             const row1Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(1) .hero-card');
             const row2Cards = document.querySelectorAll('.hero-cards-container .hero-row:nth-child(2) .hero-card');
 
-            const maxCards = Math.max(row1Cards.length, row2Cards.length);
-            let currentCardIndex = 0;
-            let isRow1 = true; // Start with row 1
+            let lastRowIndex = -1;
+            let lastCardIndex = -1;
+
+            function getRandomCard() {
+                let rowIndex, cardIndex, cards;
+
+                // Keep picking random cards until we get one that's different from the last one
+                do {
+                    // Randomly pick row 1 or row 2
+                    rowIndex = Math.floor(Math.random() * 2);
+                    cards = rowIndex === 0 ? row1Cards : row2Cards;
+
+                    // Randomly pick a card from that row
+                    cardIndex = Math.floor(Math.random() * cards.length);
+                } while (rowIndex === lastRowIndex && cardIndex === lastCardIndex);
+
+                lastRowIndex = rowIndex;
+                lastCardIndex = cardIndex;
+
+                return { cards, cardIndex };
+            }
 
             function cycleCards() {
                 // Remove expanded class from all cards
                 row1Cards.forEach(card => card.classList.remove('expanded'));
                 row2Cards.forEach(card => card.classList.remove('expanded'));
 
-                // Expand the current card
-                if (isRow1) {
-                    if (currentCardIndex < row1Cards.length) {
-                        row1Cards[currentCardIndex].classList.add('expanded');
-                    }
-                } else {
-                    if (currentCardIndex < row2Cards.length) {
-                        row2Cards[currentCardIndex].classList.add('expanded');
-                    }
-                    // Move to next card index only after bottom row
-                    currentCardIndex++;
-                    if (currentCardIndex >= maxCards) {
-                        currentCardIndex = 0; // Loop back to start
-                    }
-                }
-
-                // Toggle between rows
-                isRow1 = !isRow1;
+                // Get a random card and expand it
+                const { cards, cardIndex } = getRandomCard();
+                cards[cardIndex].classList.add('expanded');
             }
 
             // Initial expansion
