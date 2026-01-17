@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Partners - HireHuman</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Google Sans Flex"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#F5F3F1',
+                            dark: '#000000',
+                            orange: '#F47753',
+                            purple: '#4338ca',
+                            green: '#064E3B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-brand-bg/95 backdrop-blur-sm transition-all duration-300">
+        <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="./index.html" class="flex items-center cursor-pointer">
+                <img src="./assets/HH-logo.png" alt="Hire Human" class="h-8">
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="./learners.html" class="hover:text-brand-orange transition-colors">Learners</a>
+                <a href="./employers.html" class="hover:text-brand-orange transition-colors">Employers</a>
+                <a href="./training-partners.html" class="hover:text-brand-orange transition-colors">Training Partners</a>
+            </div>
+
+            <div class="text-xs text-gray-500 hidden md:flex items-center gap-1">
+                Powered by <a href="https://www.launchcode.org" target="_blank" rel="noopener noreferrer"><img src="./assets/LaunchCode_darkblue.png" alt="LaunchCode" class="h-5 -mt-1.5"></a>
+            </div>
+
+            <button class="md:hidden p-2 text-gray-600 hover:text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <!-- Title and CTA Row -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+                <h1 class="text-4xl md:text-5xl lg:text-5xl leading-[1.1] max-w-3xl">
+                    Equip Your Students for the <span class="text-brand-orange">AI-Driven Economy</span>
+                </h1>
+                <div class="flex flex-col items-start md:items-end gap-2">
+                    <button class="bg-brand-dark text-white px-10 py-4 rounded-full font-medium hover:bg-black transition-colors">
+                        Partner With Us
+                    </button>
+                    <p class="text-sm text-gray-600 self-center">Join 500+ partners</p>
+                </div>
+            </div>
+
+            <!-- Image Shapes Row -->
+            <div class="relative h-[400px] md:h-[500px] overflow-visible">
+                <!-- Left rounded rectangle with person image -->
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[80%] md:w-[80%] h-[100%] rounded-[20rem] md:rounded-[20rem] overflow-hidden z-10">
+                    <img src="https://placehold.co/800x600/png?text=Students+Learning" alt="Students Learning" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Right circle with green grid pattern -->
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full overflow-hidden">
+                  <img src="https://placehold.co/600x600/FF6347/000000/png?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Proven Track Record -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="bg-gradient-to-br from-purple-900 to-purple-700 rounded-3xl p-10 md:p-16 text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ffffff 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #ffffff 20px);"></div>
+                <div class="relative z-10">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl mb-4">Proven Track Record in Transformational Career Outcomes</h2>
+                        <p class="text-lg text-purple-100 max-w-3xl mx-auto">In search of equitable economic access, we became experts in upskilling and reskilling, launching more than 4,000 tech careers. Our sweet spot has been people with nontraditional backgrounds and underserved communities.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Item 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">4,000+</div>
+                            <div class="text-purple-200 font-medium mb-4">Tech Careers Launched</div>
+                            <p class="text-sm text-purple-200">Specializing in nontraditional backgrounds and underserved communities</p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">500+</div>
+                            <div class="text-purple-200 font-medium mb-4">Hiring Partners</div>
+                            <p class="text-sm text-purple-200">Nationwide network of employer relationships</p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">$100k+</div>
+                            <div class="text-purple-200 font-medium mb-4">Average Earnings</div>
+                            <p class="text-sm text-purple-200">After 5 years of placement</p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                            <div class="text-5xl font-bold mb-2">61%</div>
+                            <div class="text-purple-200 font-medium mb-4">Salary Increase</div>
+                            <p class="text-sm text-purple-200">According to 2023 Washington University study</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Spectrum</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Mastercard</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Centene</span>
+                </div>
+                <div class="bg-[#E5E2DB] rounded-2xl h-24 flex items-center justify-center">
+                    <span class="font-bold text-xl text-gray-800">Boeing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: World Reshaped by AI -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="bg-gradient-to-br from-purple-900 to-purple-700 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ffffff 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #ffffff 20px);"></div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 bg-purple-400 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl mb-4">Your Students Are Entering a World Reshaped by AI</h2>
+                    <p class="text-lg text-purple-100 max-w-3xl mx-auto">Entry-level jobs are shrinking as AI-driven automation reshapes work. Employers now expect AI-literacy, even for non-technical roles. At-risk and underserved students are most likely to be left behind. Together, we can ensure your graduates are aligned with employers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: We Know What Employers Need -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">We Know What Employers Need</h2>
+                    <p class="text-gray-600 text-lg">We've spent the last year sitting with employers to understand their evolving needs. The good news: clear pathways still exist—they just require AI proficiency.</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="w-full lg:flex-1 relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[200px] overflow-hidden">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[5%] sm:left-[8%] lg:left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-full sm:w-[80%] md:w-[75%] lg:w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Employer+Needs" alt="Employer Needs" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl mb-4">Zero Risks</h3>
+                    <p class="text-gray-600">No upfront costs. You only pay when students successfully land jobs. We handle training and placement end-to-end.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl mb-4">Zero Curriculum Load</h3>
+                    <p class="text-gray-600">Free access to our AI curriculum that adapts as market needs evolve. No additional burden on your faculty.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl mb-4">Real Job Placement</h3>
+                    <p class="text-gray-600">Direct connections to our 500+ employer network actively hiring AI-ready talent nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Partnership Model -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">The Partnership Model: Refer. Train. Place.</h2>
+                    <p class="text-gray-600 text-lg">A risk-free way to improve graduate outcomes</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="w-full lg:flex-1 relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[200px] overflow-hidden">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[5%] sm:left-[8%] lg:left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-full sm:w-[80%] md:w-[75%] lg:w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Partnership" alt="Partnership" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: Refer -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">1</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Refer</h3>
+                    <p class="text-gray-600 mb-4">Identify students who need AI skills and are at risk of underemployment</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Students need AI skills to compete</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">At risk of underemployment</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Want AI-enabled careers</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Train -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">2</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Train</h3>
+                    <p class="text-gray-600 mb-4">We provide free comprehensive AI training validated by employers</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI 101: Foundation in AI literacy</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI for Your Job: Role-specific training</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Employer-validated curriculum</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Place -->
+                <div class="bg-white rounded-2xl p-12">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-pink-600">3</span>
+                    </div>
+                    <h3 class="text-2xl mb-4">Place</h3>
+                    <p class="text-gray-600 mb-4">We place graduates with connections to 500+ hiring partners with performance-based fee</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Access to nationwide employers</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">$2,500 fee only upon placement</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">No placement, no payment</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Training for the World Tomorrow -->
+    <section class="py-16 md:py-24">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Training for the world tomorrow</h2>
+                    <p class="text-gray-600 text-lg">Real-world needs drive our curriculum, tailored for company, team, and job requirements</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="flex-1 relative h-[200px] w-full">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=Training" alt="Training" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec-content-workforce-ready" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-[2rem] overflow-hidden flex flex-col h-full">
+                    <div class="h-48 bg-[#1a103c] relative p-6 overflow-hidden">
+                        <div class="absolute inset-0 opacity-30"
+                             style="background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ffffff 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #ffffff 20px);">
+                        </div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                             <div class="w-32 h-32 border border-purple-400 rounded-full opacity-50"></div>
+                        </div>
+
+                        <div class="relative z-10 bg-[#7c3aed] w-12 h-12 rounded-lg flex items-center justify-center text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-12 flex-1 flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="text-3xl">AI 101—Demystify the Magic</h3>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-md text-xs font-semibold uppercase tracking-wide border border-gray-200">🗓 Mar 1</span>
+                        </div>
+                        <p class="text-gray-600 mb-8 flex-1 leading-relaxed">Using AI-infused tooling feels a bit like getting access to a computer in the 80s—magic. AI 101 demystifies that magic.</p>
+                        <button class="bg-brand-dark text-white px-8 py-4 rounded-full w-full md:w-auto font-medium hover:bg-black transition-colors">Learn more →</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#F0ECE8] rounded-[2rem] p-12 flex flex-col justify-center h-full relative">
+                    <h3 class="text-2xl mb-6">What you'll learn</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                             <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Build AI agents that save you at least 1 hour per workday</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Identify tasks worth automating with AI</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-5 h-5 text-black shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm md:text-base text-gray-800">Compare the outcomes of AI to humans and communicate gains to stakeholders</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 6: Multiple Entry Points -->
+    <section class="py-16 md:py-24">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-12">
+                <!-- Left: Text Content -->
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4">Multiple Entry Points into the AI Economy</h2>
+                    <p class="text-gray-600 text-lg">Most organizations need AI expertise at both the business and technical layers. We provide both</p>
+                </div>
+
+                <!-- Right: Overlapping Shapes -->
+                <div class="flex-1 relative h-[200px] w-full">
+                    <!-- Left red/orange circle with pattern -->
+                    <div class="absolute left-[10%] top-1/2 -translate-y-1/2 h-[100%] aspect-square rounded-full bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                        <img src="https://placehold.co/600x600/FF6347/000000?text=Pattern" alt="Pattern" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Right rounded rectangle with person image -->
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] h-[100%] rounded-[15rem] overflow-hidden z-10">
+                        <img src="https://placehold.co/800x600/png?text=AI+Economy" alt="AI Economy" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec-content-talent-delivered" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-[1.5rem] p-6 ">
+                    <div class="rounded-xl overflow-hidden h-65 mb-6">
+                        <img src="./assets/hh-Agentic-AI-Specialists.jpg" alt="Agentic AI Specialists" class="w-full h-full object-cover">
+                    </div>
+                    <span class="bg-[#FF8A65] text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Business</span>
+                    <h3 class="text-3xl mt-4 mb-2">Agentic AI Specialist</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Cross-functional specialists who translate AI capabilities into cost savings by reducing human workload. They identify automation opportunities and deliver measurable results.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Workflow analysis and optimization</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI agent deployment and testing</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Cost savings measurement and reporting</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Stakeholder communication and training</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Process improvement initiatives</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-[1.5rem] p-6 ">
+                    <div class="rounded-xl overflow-hidden h-65 mb-6">
+                        <img src="./assets/hh-AI-Readiness-Engineers.jpg" alt="AI Readiness Engineers" class="w-full h-full object-cover">
+                    </div>
+                    <span class="bg-[#FF8A65] text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Technical</span>
+                    <h3 class="text-3xl mt-4 mb-2">AI Readiness Engineer</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Technical experts who deeply embed AI into your systems and workflows. They build the infrastructure and integrations that make AI adoption scalable across your organization.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">AI system integration and architecture</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">API development and automation pipelines</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Infrastructure setup and maintenance</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Security and compliance implementation</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-orange shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-sm text-gray-600">Technical documentation and knowledge transfer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Choose Your Partnership Model -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-medium mb-4">Choose Your Partnership Model</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Standard Plan -->
+                <div class="bg-white border-2 border-gray-200 rounded-3xl p-10 hover:border-brand-orange transition-colors">
+                    <div class="text-sm font-bold text-gray-600 uppercase tracking-wider mb-4">Standard</div>
+                    <h3 class="text-2xl font-medium mb-2">Pay per Results</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold">$2,500</span>
+                        <span class="text-gray-600 text-lg">/placement</span>
+                    </div>
+                    <p class="text-gray-600 mb-8">per successful placement</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-gray-800">Access to LC AI curriculum</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-gray-800">Career services for all students</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-gray-800">Target 100 placements for initial pilot</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-brand-dark text-white py-4 rounded-full font-medium hover:bg-black transition-colors">Get Started →</button>
+                </div>
+
+                <!-- Custom Plan -->
+                <div class="bg-gradient-to-br from-brand-orange to-orange-600 rounded-3xl p-10 text-white relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold">POPULAR</div>
+                    <div class="text-sm font-bold uppercase tracking-wider mb-4 opacity-90">Custom</div>
+                    <h3 class="text-2xl font-medium mb-2">Full Partnership</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold">$100K</span>
+                        <span class="text-white/80 text-lg">/year</span>
+                    </div>
+                    <p class="text-white/90 mb-8">per year + $2,500/placement</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Everything in Standard Model</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Customized curriculum for your institution</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Dedicated partnership manager</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-brand-orange py-4 rounded-full font-bold hover:bg-gray-50 transition-colors">Contact Sales →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-gray-200">
+        <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <a href="./learners.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Learners</a>
+                <a href="./employers.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Employers</a>
+                <a href="./training-partners.html" class="block text-sm font-medium hover:text-brand-orange transition-colors">Training Partners</a>
+            </div>
+            <div class="space-y-4">
+                <a href="#" class="block text-sm font-medium hover:text-brand-orange transition-colors">Privacy</a>
+                <a href="#" class="block text-sm font-medium hover:text-brand-orange transition-colors">Terms</a>
+            </div>
+
+            <div class="md:col-span-2 flex flex-col lg:items-end justify-between h-full pt-8 lg:pt-0">
+                <div class="text-xs text-gray-400 mb-2 flex items-center gap-1">Powered by <a href="https://www.launchcode.org" target="_blank" rel="noopener noreferrer"><img src="./assets/LaunchCode_darkblue.png" alt="LaunchCode" class="h-5 -mt-1.5 opacity-60 hover:opacity-100 transition-opacity"></a></div>
+                <div class="w-full max-w-md lg:text-right flex lg:justify-end">
+                    <img src="./assets/HH-logo.png" alt="Hire Human" class="h-16 md:h-20 lg:h-24 object-contain">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
